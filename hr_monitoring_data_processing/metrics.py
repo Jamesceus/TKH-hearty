@@ -24,7 +24,13 @@ def average(data: list) -> float:
 
 def maximum(data: list) -> float:
     """
-    INSERT DOCSTRING HERE
+    This is another filter pattern, which has been modifided to  
+    combine with a different version of a map pattern, which 
+    doesnt include the "append" method. The body of the for loop is 
+    repeated however many times there are items in the list. Each 
+    time, the if statement’s condition is considered, and if True 
+    then the "num" variable stores the element inside maximum to be returned
+    at the end of the function execution.
     """
     #pass
     if not data:
@@ -41,6 +47,10 @@ def variance(data: list) -> float:
     """
     INSERT DOCSTRING HERE
     (calculate population variance)
+    Args:
+        data (list[int]): list of integers representing heart rate samples
+    Returns:
+        float: a floating point value representing the average of this list
     """
     #pass
     if len(data) <2:
